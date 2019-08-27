@@ -14,7 +14,7 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = environ.get('SQLALCHEMY_DATABASE_URI')
     app.config['JWT_ACCESS_LIFESPAN'] = {'minutes' : 2}
 
-    db.init_app((app))
+    db.init_app(app)
     guard.init_app(app,User)
 
 

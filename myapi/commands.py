@@ -9,7 +9,7 @@ from .extentions import guard, db
 def create_db():
     db.create_all()
 
-@click.command(name="create_users")
+@click.command(name='create_users')
 @with_appcontext
 def create_users():
     db.create_all()
