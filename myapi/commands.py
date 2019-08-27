@@ -2,7 +2,7 @@ import click
 from flask.cli import with_appcontext
 
 from .models import User
-from .extentions import guard, db
+from .extensions import guard, db
 
 @click.command(name="create_db")
 @with_appcontext

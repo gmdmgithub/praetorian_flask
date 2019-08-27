@@ -3,7 +3,7 @@ from os import environ
 
 from .commands import create_users, create_db
 
-from .extentions import db, guard
+from .extensions import db, guard
 from .models import User
 from .routes import api 
 
