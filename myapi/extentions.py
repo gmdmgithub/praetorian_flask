@@ -1,5 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
-from flask-praetorian import Praetorian
+from flask_praetorian import Praetorian 
 
 db = SQLAlchemy()
 guard = Praetorian()

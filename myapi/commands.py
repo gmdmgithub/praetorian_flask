@@ -2,10 +2,15 @@ import click
 from flask.cli import with_appcontext
 
 from .models import User
-from .extentions import guard
+from .extentions import guard, db
+
+@click.command(name="create_db")
+@with_appcontext
+def create_db():
+    db.create_all()
 
 @click.command(name="create_users")
-@with_appcontext()
+@with_appcontext
 def create_users():
     db.create_all()
     db.session.add(User(
